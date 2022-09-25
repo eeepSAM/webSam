@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Montserrat:ital,wght@0,400;0,500;0,600;1,500&family=Poppins&family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Reem Kufi', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'montserrat', sans-serif;
+}
+body{
+    background-color: #fff;
+}
+.header-container-nav{
+    width: 100%;
+    border-bottom: 2px solid #000000;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    transition: all 0.5s;
+    background-color: #fff;
+}
+#nav-bar{
+    height: 75px;
+    width: 1100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.logo img{
+    height: 60px;
+}
+#nav-bar.active .menu{
+    display: block;
+    
+}
+.menu-hamburguer{
+    display:flex;
+    flex-direction: column;
+    gap: 3px;
+    display: none;
+    cursor: pointer;
+   
+}
+.menu-hamburguer .linha{
+    width: 30px;
+    height: 4px;
+    background-color: #000000;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.container-menu{
+    display: flex;
+    gap:30px;
+    
+}
+.item-menu{
+    font-size:20px;
+    font-family:'Reem Kufi', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+.item-menu:hover{
+    color: #423d3d;
+}
+
+.container-apresentacao-escola{
+    /* margin-top:; */
+    display:flex;
+    justify-content: center;
+    margin-bottom: 180px;
+}
+.container-apresentacao-escola .container-conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1100px;
+}
+.container-apresentacao-escola .container-conteudo .container-descricao{
+    width: 50%;
+    align-self: flex-end;
+}
+.container-apresentacao-escola .container-conteudo .container-descricao h2{
+    font-size: 54px;
+    font-weight: 700;
+}
+.container-apresentacao-escola .container-conteudo .container-descricao h2 span{
+    color:#06B45F;
+}
+.container-apresentacao-escola .container-conteudo .container-descricao p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.container-apresentacao-escola .container-conteudo .container-img-vetor{
+    width: 50%;
+
+}
+.container-apresentacao-escola .container-img-vetor img{
+    width: 100%;
+}
+
+section .container-eventos{
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+}
+section .container-eventos .container-eventos-descricao{
+    width: 1100px;
+}
+section .container-eventos .container-eventos-descricao .eventos-descricao .descricao-title{
+    width: 40%;
+}
+section .container-eventos .container-eventos-descricao .eventos-descricao .container-img-eventos{
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+section .container-eventos .container-eventos-descricao .eventos-descricao .container-img-eventos img{
+    width: 49%;
+    height: min-content;
+}
+section .container-eventos .container-eventos-descricao .eventos-descricao .descricao-title h3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+section .container-eventos .container-eventos-descricao .eventos-descricao .descricao-title p{
+    font-size: 18px;
+    font-weight: 500;
+}
+section .container-eventos .container-eventos-descricao .eventos-descricao .descricao-title span{
+    color: #06B45F;
+}
+
+section .container-nosso-jeito{
+    width: 100%;
+    margin-top:100px;
+    display: flex;
+    justify-content: center;
+}
+section .container-nosso-jeito .container-jeito-conteudo{
+    width: 1100px;
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+}
+section .container-nosso-jeito .container-jeito-conteudo .jeito-descricao h4{
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+section .container-nosso-jeito .container-jeito-conteudo .jeito-descricao h2{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+section .container-nosso-jeito .container-jeito-conteudo .container-img-educacao img{
+    width: 1100px;
+}
+section .container-nosso-jeito .container-jeito-conteudo p{
+    width: 60%;
+    align-self: flex-end;
+    font-weight: 600;
+    font-size: 16px;
+}
+section .container-propostas{
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    margin-top:100px;
+}
+section .container-propostas .propostas-conteudo{
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    padding:50px 0 100px 0;
+}
+section .container-propostas .propostas-conteudo .conteudo-descricao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+section .container-propostas .propostas-conteudo .conteudo-descricao img{
+    width: 13%;
+    align-self: flex-start;
+}
+section .container-propostas .propostas-conteudo .conteudo-descricao h1{
+    font-family:'Montserrat Alternates', sans-serif ;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 90px;
+    width: 60%;
+}
+section .container-propostas .propostas-conteudo .conteudo-descricao span{
+    font-style: italic;
+    font-weight: 700;
+}
+section .container-propostas .propostas-conteudo .propostas{
+    display: flex;   
+    flex-direction: column;
+    gap: 100px;
+}
+section .container-propostas .propostas-conteudo .propostas .linha-propostas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao{
+    width: 35%;
+}
+section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao img{
+    height: 35px;
+    margin-bottom: 10px;
+}
+section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto{
+    width: 100%;
+}
+section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto h5{
+    font-size: 23px;
+    font-weight: 600;
+    border-bottom: 3px solid #35AB7B;
+}
+section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto .laranja{
+    border-bottom: 3px solid #F65E08;
+}
+section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height:28.04px;
+    margin-top: 25px;
+}
+section .container-apresentacao-gestao{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+section .container-apresentacao-gestao .container-conteudo-gestao{
+    width:1100px ;
+}
+section .container-apresentacao-gestao .container-conteudo-gestao .descricao-gestao h4{
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+section .container-apresentacao-gestao .container-conteudo-gestao .descricao-gestao h2{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+section .container-apresentacao-gestao .container-conteudo-gestao .container{
+    background-color: #fafafa;
+    border-radius: 35px;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+section .container-apresentacao-gestao .container-conteudo-gestao .container .container-img-gestao{
+    width: 50%
+}
+section .container-apresentacao-gestao .container-conteudo-gestao .container .container-img-gestao img{
+    width: 80%;
+}
+section .container-apresentacao-gestao .container-conteudo-gestao .container  .fala-gestora{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+section .container-apresentacao-gestao .container-conteudo-gestao .container .fala-gestora p{
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 500;
+}
+section .container-apresentacao-gestao .container-conteudo-gestao .container .fala-gestora h6{
+    font-size: 18px;
+
+}
+
+footer{
+    margin-top: 300px;
+    border-top: 1px solid #000000;
+}
+footer .container-conteudo-footer{ 
+    height: 70px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    margin: 0 auto;
+}
+footer .container-conteudo-footer .copyrigth p{
+    font-size: 16px;
+    font-weight: 500;
+}
+footer .container-conteudo-footer .icones-redes img{
+    height: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+footer .container-conteudo-footer .icones-redes img:hover{
+    transition:0.5s;
+    transform: translateX(0) scale(1.2);
+}
+
+
+ @media (max-width:1100px){
+    #nav-bar{
+        width:90%;
+    }
+    .item-menu{
+        font-size:18px;
+    }
+    .container-menu{
+        gap: 20px;
+    }
+    .container-apresentacao-escola .container-conteudo{
+        width: 90%;
+    }
+    section .container-eventos .container-eventos-descricao{
+        width: 90%;
+    }
+    section .container-nosso-jeito .container-jeito-conteudo{
+        width: 90%;
+    }
+    section .container-nosso-jeito .container-jeito-conteudo .container-img-educacao img{
+        width: 100%;
+    }
+    section .container-propostas .propostas-conteudo{
+        width: 90%;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao{
+        width:90%;  
+    }
+    footer .container-conteudo-footer{
+        width: 100%;
+    }
+    .container-apresentacao-escola{
+        margin-top: 75px;
+        margin-bottom: 100px;
+        padding-top: 10px;
+    }
+    .container-apresentacao-escola .container-conteudo .container-descricao h2{
+        font-size: 35px;
+    }
+    .container-apresentacao-escola .container-conteudo .container-img-vetor{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .container-apresentacao-escola .container-conteudo .container-img-vetor img{
+        height: 400px;
+    }
+    section .container-nosso-jeito .container-jeito-conteudo .jeito-descricao h4{
+        font-size: 30px;
+    }
+    section .container-nosso-jeito .container-jeito-conteudo .jeito-descricao h2{
+        font-size: 35px;
+    }
+    section .container-nosso-jeito .container-jeito-conteudo p{
+        font-size: 14px;
+    }
+    section .container-nosso-jeito{
+        margin-bottom: 70px;
+    }
+    section .container-eventos .container-eventos-descricao .eventos-descricao .descricao-title h3{
+        font-size: 35px;
+    }
+    section .container-eventos .container-eventos-descricao .eventos-descricao .descricao-title p{
+        font-size: 16px;
+    }
+    section .container-propostas .propostas-conteudo .conteudo-descricao h1{
+        font-size: 65px;
+    }
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto h5{
+        font-size: 18px;
+    }
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto p{
+        font-size: 16px;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container-img-gestao .fala-gestora p{
+        font-size: 16px;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container-img-gestao .fala-gestora h6{
+        font-size: 14px;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .descricao-gestao h4{
+        font-size: 30px;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .descricao-gestao h2{
+        font-size: 35px;
+    }
+    footer .container-conteudo-footer .copyrigth p{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:900px){
+    #nav-bar{
+        height: 70px; 
+        width: 90%;      
+    }
+    .logo img{
+        height:50px;
+    }
+    nav.active .menu{
+        display: block;        
+    }
+    nav.active .menu-hamburguer .linha2{
+        display: none;
+    }
+    nav.active .menu-hamburguer .linha1{
+        transform: rotate(140deg);
+        position: absolute;     
+    }
+    nav.active .menu-hamburguer .linha3{
+        transform: rotate(-140deg);
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        top:72px;
+        right: 0;
+        width: 60vw;       
+        z-index: 9999;
+        animation: slide 0.5s ease-in-out;
+    }
+    @keyframes slide {
+        from{
+          
+           transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    .menu .container-menu{
+        display: flex;
+        flex-direction: column;
+        align-items:center; 
+        padding-top: 10px;
+        padding-bottom: 20px; 
+        background:#fff;
+        width: 100%;
+        height: 100vh;
+        gap: 35px;
+    }
+    .menu .container-menu .item-menu{
+        padding: 1rem; 
+        font-size: 20px;
+        color: #0C0C0C;   
+    }
+    .menu-hamburguer{
+        display: flex;
+    }
+    .container-apresentacao-escola .container-conteudo{
+        width: 90%;
+    }
+    .container-apresentacao-escola{
+        margin-top: 72px;
+        margin-bottom: 100px;
+        padding-top: 30px;
+    }
+    .container-apresentacao-escola .container-conteudo .container-descricao{
+        width: 100%;
+    }
+    .container-apresentacao-escola .container-conteudo .container-descricao h2{
+        font-size: 40px;
+    }
+    .container-apresentacao-escola .container-conteudo .container-descricao p{
+        font-size: 14px;
+    }
+    .container-apresentacao-escola .container-conteudo .container-img-vetor{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+    .container-apresentacao-escola .container-conteudo .container-img-vetor img{
+        height: 400px;
+    }
+    section .container-nosso-jeito .container-jeito-conteudo .jeito-descricao h4{
+        font-size: 30px;
+    }
+    section .container-nosso-jeito .container-jeito-conteudo .jeito-descricao h2{
+        font-size: 35px;
+    }
+    section .container-nosso-jeito .container-jeito-conteudo p{
+        font-size: 14px;
+    }
+    section .container-nosso-jeito{
+        margin-bottom: 70px;
+    }
+    section .container-eventos .container-eventos-descricao .eventos-descricao .descricao-title h3{
+        font-size: 35px;
+    }
+    section .container-eventos .container-eventos-descricao .eventos-descricao .descricao-title p{
+        font-size: 16px;
+    }
+    section .container-propostas .propostas-conteudo .conteudo-descricao h1{
+        font-size: 50px;
+        width: 100%;
+        line-height: 70px;
+    }
+    section .container-propostas .propostas-conteudo{
+        gap: 80px;
+    }   
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas{
+        flex-direction: column;
+        gap: 50px;
+    }
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao{
+        width: 70%;
+    }
+    section .container-propostas .propostas-conteudo .propostas{
+        gap: 50px;
+    }
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto h5{
+        font-size: 18px;
+    }
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao img{
+        height: 25px;
+    }
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto p{
+        font-size: 16px;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container{
+        padding: 20px 20px;
+       
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container .container-img-gestao{
+        display:flex;
+        justify-content: center;
+        padding: 20px 0;
+        width: 50%;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container .container-img-gestao img{
+        width: 100%;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container .fala-gestora{
+        justify-content: space-around;
+        width: 60%;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container .fala-gestora p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container .fala-gestora h6{
+        font-size: 13px;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .descricao-gestao h4{
+        font-size: 30px;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .descricao-gestao h2{
+        font-size: 35px;
+    }
+    footer .container-conteudo-footer{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+
+
+@media (max-width:500px){
+    #nav-bar{
+        width: 90%;
+    }
+    .logo img{
+        height: 45px;
+    }
+    .menu{
+        width: 80vw;   
+    }
+    .menu .container-menu .item-menu{
+        padding: 1rem;
+        font-size:18px;     
+    }
+    .container-apresentacao-escola .container-conteudo{
+        width: 90%;
+    }
+    .container-apresentacao-escola{
+        margin-bottom: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .container-apresentacao-escola .container-conteudo .container-descricao{
+        width: 100%;
+    }
+    .container-apresentacao-escola .container-conteudo .container-descricao h2{
+        font-size: 30px;
+        text-align: justify;
+    }
+    .container-apresentacao-escola .container-conteudo .container-descricao p{
+        text-align: justify;
+        margin-top:10px ;
+    }
+    .container-apresentacao-escola .container-conteudo .container-img-vetor{
+        display:none;
+    }
+    section .container-nosso-jeito .container-jeito-conteudo .jeito-descricao h4{
+        font-size: 25px;
+    }
+    section .container-nosso-jeito .container-jeito-conteudo .jeito-descricao h2{
+        font-size: 25px;
+    }
+    section .container-nosso-jeito .container-jeito-conteudo p{
+        font-size: 14px;
+        width: 100%;
+    }
+    section .container-nosso-jeito{
+        margin-bottom: 70px;
+    }
+    section .container-eventos .container-eventos-descricao .eventos-descricao .descricao-title{
+        width: 100%;
+    }
+    section .container-eventos .container-eventos-descricao .eventos-descricao .descricao-title h3{
+        font-size: 25px;
+    }
+    section .container-eventos .container-eventos-descricao .eventos-descricao .descricao-title p{
+        font-size: 16px;
+    }
+    section .container-propostas .propostas-conteudo .conteudo-descricao h1{
+        font-size: 35px;
+        line-height: 50px;
+        text-align:center;
+    }
+    section .container-propostas .propostas-conteudo .conteudo-descricao img{
+        display: none;
+    }
+    section .container-propostas .propostas-conteudo{
+        gap: 50px;
+    }
+    section .container-propostas .propostas-conteudo .propostas{
+        gap: 50px;
+    }
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas{
+        flex-direction: column;
+        gap: 50px;
+    }
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao{
+        width: 80%;
+    }
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto h5{
+        font-size: 18px;
+    }
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao img{
+        height: 25px;
+    }
+    section .container-propostas .propostas-conteudo .propostas .linha-propostas .propostas-descricao .texto p{
+        font-size: 16px;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container{
+        padding: 20px 20px;
+       flex-direction: column;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container .container-img-gestao{
+        width: 100%;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container .container-img-gestao img{
+        width: 70%;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container .fala-gestora{
+        gap: 15px;
+        width: 100%;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container .fala-gestora p{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .container .fala-gestora h6{
+        font-size: 14px;
+        align-self: flex-end;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .descricao-gestao h4{
+        font-size:25px;
+    }
+    section .container-apresentacao-gestao .container-conteudo-gestao .descricao-gestao h2{
+        font-size: 25px;
+    }
+    footer .container-conteudo-footer .copyrigth p{
+        font-size: 10px;
+    }
+    footer .container-conteudo-footer{
+        flex-direction: column-reverse;
+    }
+    section .container-eventos .container-eventos-descricao .eventos-descricao .container-img-eventos{
+        flex-direction: column;
+        gap: 30px;
+    }
+    section .container-eventos .container-eventos-descricao .eventos-descricao .container-img-eventos img{
+        width: 90%;
+        margin:0 auto;
+    }
+
+}
